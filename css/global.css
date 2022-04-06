@@ -1,0 +1,16 @@
+@import './reset.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap');
+/*font-family: 'Holtwood One SC', serif;*/
+/*Alfa Slab One 이것도 괜찮음. 좀더 정갈한 느낌*/
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+/*font-family: 'Noto Sans KR', sans-serif;*/
+
+/*컨텐츠마다 기본 margin-top: 50px;
+*/
+.wrapper {
+    width: 1350px;
+    margin: 0 auto;
+    font-family: 'Noto Sans KR', sans-serif;
+}

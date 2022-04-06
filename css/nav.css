@@ -1,0 +1,40 @@
+/*global 임포트 안해도 됨*/
+#nav {
+    width: 1350px;
+    height: 65px;
+    background-color: antiquewhite;
+    margin: 20px 0;
+}
+
+#nav ul {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    height: 6;
+}
+
+#nav li:not(.logo) {
+    width: 210px;
+    height: 45px;
+    line-height: 45px;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 10px;
+    transition: all 0.5s;
+    border-bottom: 1px solid black;
+}
+
+#nav li:not(.logo):hover{
+    border-bottom: 1px dotted black;
+    transition: all 0.5s;
+}
+
+#nav li:nth-child(3) {
+    width: 450px;
+    background-color: blueviolet;
+    height: 65px;
+}
+
+#nav li a {
+    cursor: pointer;
+}
