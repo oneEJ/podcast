@@ -58,26 +58,58 @@
     width: 750px;
     text-align: center;
     margin: 0 auto;
-    margin-top: 50px;
-    background-color: bisque;
-}
-
-#main {
     margin-top: 100px;
-    text-align: center;
+    /*background-color: bisque;*/
 }
 
-#main > p:first-child {
-    background-color: rgb(212, 135, 222);
+#content > p {
+    font-size: 18px;
+    margin: 5px;
+    font-family: 'Holtwood One SC', serif;
+}
+
+#content .sns {
+    width: 400px;
+    height: 100px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 15px;
+    /* background-color: palevioletred; */
+}
+
+#content .sns a img {
+    /* background-color: #219F94; */
+    width: 50px;
+    height: 50px;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+#onair {
+    margin-top: 200px;
+    text-align: center;
+    /*background-color: rgb(244, 212, 248);*/
+    padding-bottom: 100px;
+}
+
+#onair > p:first-child {
+    margin: 0 auto;
+    width: 300px;
+    height: 50px;
+    line-height: 50px;
+    padding: 20px;
+    border: 10px solid rgba(61, 61, 61, 0.979);
+    background-color: rgb(255, 38, 0);
+    color: white;
     text-align: center;
     font-weight: bold;
     font-size: 50px;
     font-family: 'Holtwood One SC', serif;
 }
 
-#main .video {
+#onair .video {
     margin: 0 auto;
-    background-color: brown;
+    /*background-color: brown;*/
     width: 700px;
     height: 415px;
     overflow: hidden;
@@ -86,60 +118,61 @@
     position: relative;
 }
 
-#main .video .prev, 
-#main .video .next {
+#onair .video .prev, 
+#onair .video .next {
     cursor: pointer; 
     position: absolute; 
-    width: 50px;
-    height: 50px; 
+    width: 30px;
+    height: 30px; 
     border-radius: 50%;
-    padding: 16px;
+    /*padding: 16px;*/
     color: #000;
     font-weight: bold; 
     font-size: 16px; 
     transition: 0.5s ease; 
-    top: 50%;
+    top: 55%;
     transform: translate(-50%, -50%);
     user-select: none;
-    background-color: rgba(216, 112, 147, 0.295);
+    background-color: #219F94;
 
 }
 
-#main .video .prev { 
+/*https://blog.naver.com/pis7pis7/222691305428*/
+/*iframe:focus {outline: none;}
+iframe[seamless] {display: block;}*/
+/*https://cookie-script.com/blog/how-to-add-youtube-videos-without-cookies*/
+#onair .video .prev { 
     left: 42px;
 }
 
-#main .video .next {
-    right: -40px; 
+#onair .video .next {
+    right: 15px; 
 }
 
-#main .video .prev:hover, 
-#main .video .next:hover {
+#onair .video .prev:hover, 
+#onair .video .next:hover {
     color:#fff;
 }
 
-
-#main .video .slider div {
+#onair .video .slider .ep {
     width: 600px;
     height: 375px;
-    background-color: cadetblue;
+    /*background-color: cadetblue;*/
     text-align: center;
     display: inline-block;
     margin: 20px;
 }
 
-#main .video .slider p {
+#onair .video .slider .ep p {
     font-size: 20px;
     width: 600px;
     height: 40px;
     line-height: 40px;
-    background-color: cornflowerblue;
+   /* background-color: cornflowerblue;*/
     box-sizing: border-box;
 }
 
-#main .video .slider iframe {
+#onair .video .slider .ep iframe {
     margin: 10px;
-    background-color: blueviolet;
+    /*background-color: blueviolet;*/
 }
-
-

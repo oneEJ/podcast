@@ -39,10 +39,6 @@
     display: block;
 }
 
-#nav li:not(.logo) a:hover {
-    color: whitesmoke;
-    font-weight: bold;
-  }
 #nav li:not(.logo) a:after {
     display: block;
     position: absolute;
@@ -61,10 +57,28 @@
     z-index: -1;
     transition: all .5s;
   }
-#nav li:not(.logo) a:hover:after {
+
+#nav li:not(.logo):hover a,
+#nav li:not(.logo).on a
+{ /*a:hover 준거 수정*/
+    color: whitesmoke;
+    font-weight: bold;
+  }
+
+#nav li:not(.logo):hover a:after,
+#nav li:not(.logo).on a:after
+{
     opacity: 1;
     visibility: visible;
     height: 100%;
     transition: all .5s;
   }
   
+
+  #wrap header nav ul li:hover a,
+#wrap header nav ul li.on a
+{color:#ed3140;} 
+
+#wrap header nav ul li:hover:after,
+#wrap header nav ul li.on:after
+{background:#ed3140;}

@@ -1,0 +1,84 @@
+/*global 임포트 안해도 됨*/
+#nav {
+    width: 1350px;
+    height: 65px;
+    margin: 20px 0;
+    border-bottom: 1px solid black;
+}
+
+#nav ul {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    height: 6;
+}
+
+#nav li:not(.logo) {
+    width: 150px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+#nav li:nth-child(3) {
+    width: 450px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 35px;
+    font-family: 'Holtwood One SC', serif;
+    background: url("../images/원2.png") no-repeat;
+    background-size: 450px 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#nav li:not(.logo) a {
+    position:relative;
+    z-index: 1;
+    display: block;
+}
+
+#nav li:not(.logo) a:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 1px;
+    content: '.';
+    color: transparent;
+    background: #219F94; /*#4B7BF5*/ 
+    visibility: none;
+    opacity: 0;
+    z-index: -1;
+    transition: all .5s;
+  }
+
+#nav li:not(.logo):hover a,
+#nav li:not(.logo).on a
+{ /*a:hover 준거 수정*/
+    color: whitesmoke;
+    font-weight: bold;
+  }
+
+#nav li:not(.logo):hover a:after,
+#nav li:not(.logo).on a:after
+{
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+    transition: all .5s;
+  }
+  
+
+  #wrap header nav ul li:hover a,
+#wrap header nav ul li.on a
+{color:#ed3140;} 
+
+#wrap header nav ul li:hover:after,
+#wrap header nav ul li.on:after
+{background:#ed3140;}
