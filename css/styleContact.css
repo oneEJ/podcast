@@ -76,3 +76,17 @@
 .main_form button {
     all: unset;
 }
+
+.main_form li:nth-of-type(6) input[type="file"] {
+    display: inline-block;
+    width: 100px;
+    height: 45px;
+    background-color: #FACF5A;
+    color: #fff;
+    line-height: 45px;
+    cursor: pointer;
+    text-align: center;
+
+}
+
+/* input type="file"은 class, id값을 명시해서 적용해도  css적용안됨 */

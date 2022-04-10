@@ -3,10 +3,66 @@
 
 /*font-family: 'Holtwood One SC', serif;*/
 
-.main h1 {
+.episode h1 {
     font-family: 'Holtwood One SC', serif;
     text-align: center;
     margin-top: 50px;
     margin-bottom: 30px;
     font-size: 20px;
+}
+
+
+.episode_video {
+    /* background-color: aquamarine; */
+    margin-top: 10px;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.episode_video li {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    width: 800px;
+    border-bottom: 1px solid #ccc;
+    background-color: blanchedalmond;
+
+}
+
+.episode_video img {
+    width: 200px;
+}
+
+.episode_video .episode_video_text > p {
+    width: 590px;
+    font-size: 16px;
+    padding: 5px;
+    margin-left: 10px;
+    background-color: brown;
+}
+
+.episode_video .episode_video_text > span {
+    display: block;
+    width: 200px;
+    margin-left: 10px;
+    padding-left: 5px;
+    font-size: 14px;
+    background-color: blueviolet;
+}
+
+.episode_video .episode_video_text .episode_video_text_sub p{
+    background-color: azure;
+    display: -webkit-box;
+    -webkit-box-orient: vertical; 
+    word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+
+    width: 590px;
+    height: 59px;
+    padding: 5px;
+    font-size: 15px;
+    line-height: 20px;
+    margin-left: 10px;
 }

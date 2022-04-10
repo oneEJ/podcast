@@ -37,46 +37,37 @@
 
             <form class="main_form">
                 <ul>
-                    <li>
-                        <label>
-                            <span>Name<sup>*</sup></span>
-                            <input type="text" id="name" placeholder="please enter your name" required>
-                        </label>
+                    <li><!--1-->
+                        <label for="name"><span>Name<sup>*</sup></span></label>
+                        <input type="text" id="name" placeholder="please enter your name" required>
+                        
                     </li>
-                    <li>
-                        <label>
-                            <span>Email<sup>*</sup></span>
-                            <input type="email" id="email" placeholder="please enter with '@'" required>
-                        </label>
+                    <li><!--2-->
+                        <label for="email"><span>Email<sup>*</sup></span></label>
+                        <input type="email" id="email" placeholder="please enter with '@'" required>
+                        
                     </li>
-                    <li>
-                        <label>
-                            <span>Phone number</span>
-                            <input type="tel" id="tel" placeholder="please enter without hyphen(-)">
-                        </label>
+                    <li><!--3-->
+                        <label for="tel"><span>Phone number</span></label>
+                        <input type="tel" id="tel" placeholder="please enter without hyphen(-)">
+                        
                     </li>
-                    <li>
-                        <label>
-                            <span>Subject<sup>*</sup></span>
-                            <input type="text" id="subject" required>
-                        </label>
+                    <li><!--4-->
+                        <label for="subject"><span>Subject<sup>*</sup></span></label>
+                        <input type="text" id="subject" required>
+                        
                     </li>
-                    <li>
-                        <label>
-                            <span>Message</span>
-                            <textarea id="message" placeholder="please write a message"></textarea>
-                        </label>
+                    <li><!--5-->
+                        <label for="message"><span>Message</span></label>
+                        <textarea id="message" placeholder="please write a message"></textarea>
                     </li>
-                    <li>
-                        <label>
-                            <span>
-                                ile</span>
-                            <input type="file" id="file" multiple="multiple">
-                        </label>
+                    <li><!--6-->
+                        <label for="file"><span>File</span></label>
+                        <input type="file" id="file" multiple="multiple">
                     </li>
                 </ul>
-                <button type="rest" value="contactForm">
-                <button type="submit" value="contactForm">
+                <button type="reset" value="contactForm">Reset</button>
+                <button type="submit" value="contactForm">Submit</button>
             </form>
         </main>
     
