@@ -52,6 +52,7 @@
     width: 400px; /*오른쪽 간격 조금 안맞아. 일단 해놓은거.*/
     border:none;
     color: black;
+    background-color: #fff;
 }
 
 .main_form textarea {
@@ -73,20 +74,69 @@
 
 }
 
-.main_form button {
-    all: unset;
-}
-
 .main_form li:nth-of-type(6) input[type="file"] {
-    display: inline-block;
-    width: 100px;
-    height: 45px;
-    background-color: #FACF5A;
-    color: #fff;
-    line-height: 45px;
+    border:none;
     cursor: pointer;
-    text-align: center;
-
+    height: 55px;
 }
 
 /* input type="file"은 class, id값을 명시해서 적용해도  css적용안됨 */
+/* file upload button 플러그인도 많대 */
+/* .main_form li:nth-of-type(6) input::file-selector-button { 
+    display: none; /* 파일 선택 버튼 없애기 */
+
+.main_form li:nth-of-type(6) input[type=file]::file-selector-button {   
+    all: unset;
+    background-color: rgb(210, 138, 30);
+    padding: 5px;
+    width: 100px;
+    height: 20px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.main_form li:nth-of-type(6) input[type=file]::file-selector-button:hover {
+    background-color: #219F94;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.main_form_button {
+    margin: 10px;
+    text-align: center;
+}
+.main_form_button button{
+    all: unset;
+    text-align: center;
+    width: 100px;
+    padding: 5px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+/*색상 디테일 잡기!!*/
+/*div하지 않았을 때 first-child가 또 먹지 않아서 first-of-type로 했더니 됨*/
+.main_form_button button:first-of-type { 
+    background-color: #fff;
+    color: #000;
+}
+
+.main_form_button button:first-of-type:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.main_form_button button:last-of-type{
+    background-color: orange;
+    color: #000;
+}
+
+.main_form_button button:last-of-type:hover {
+    background-color: #219F94;
+    color: #fff;
+}
+
+
+.mailpopup {
+    display: none;
+}

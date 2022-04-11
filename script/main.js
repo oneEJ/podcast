@@ -23,6 +23,7 @@ function showSlides(n) {
 }*/
 
 $(document).ready(function(){ 
+	//slider
 	$(".prev").click(function(){
 		$(".slider div").eq(0).insertAfter(".slider div:last-child");
 	});
@@ -30,19 +31,26 @@ $(document).ready(function(){
 		$(".slider div").eq(-1).insertBefore(".slider div:first-child");
 	});
 
-});//대문
-
-
-$(document).ready(function(){
+	//nav 클릭상태 유지 - 수정해야함 ★
 	$("#nav li:not(.logo) a").click(function(){
 		$("#nav li:not(.logo) a").removeClass("on");    
 		$(this).addClass("on");    
 	});
-	//로고 클릭 시
 	$(".logo").click(function(){
 		$("#nav li:not(.logo) a").removeClass("on");
 
 	});
-});
+
+	
+	//팝업 - 수정해야함 ★
+	$("#popup_open").click(function(){
+		$(".mailpopup").show();
+	});
+	$(".popup_close").click(function(){
+		$(".mailpopup").hide();
+	});
+	
+
+});//대문
 
 
